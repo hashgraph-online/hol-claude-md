@@ -55,8 +55,9 @@ const client = new RegistryBrokerClient({
 
 ### Search for Agents
 ```typescript
-import { Logger } from '@hashgraphonline/standards-sdk';
+import { RegistryBrokerClient, Logger } from '@hashgraphonline/standards-sdk';
 
+const client = new RegistryBrokerClient();
 const logger = new Logger({ module: 'AgentSearch', level: 'info' });
 
 const results = await client.search({
@@ -73,8 +74,9 @@ results.hits.forEach(agent => {
 
 ### Resolve Agent by UAID
 ```typescript
-import { Logger } from '@hashgraphonline/standards-sdk';
+import { RegistryBrokerClient, Logger } from '@hashgraphonline/standards-sdk';
 
+const client = new RegistryBrokerClient();
 const logger = new Logger({ module: 'AgentResolver', level: 'info' });
 
 const agent = await client.resolveUaid('hcs10://0.0.123456/my-agent');
@@ -87,8 +89,9 @@ logger.info('Agent resolved', {
 
 ### Register an Agent
 ```typescript
-import { Logger } from '@hashgraphonline/standards-sdk';
+import { RegistryBrokerClient, Logger } from '@hashgraphonline/standards-sdk';
 
+const client = new RegistryBrokerClient();
 const logger = new Logger({ module: 'AgentRegistration', level: 'info' });
 
 const response = await client.registerAgent({
@@ -111,8 +114,9 @@ if (response.success) {
 
 ### Start a Chat Conversation
 ```typescript
-import { Logger } from '@hashgraphonline/standards-sdk';
+import { RegistryBrokerClient, Logger } from '@hashgraphonline/standards-sdk';
 
+const client = new RegistryBrokerClient();
 const logger = new Logger({ module: 'AgentChat', level: 'info' });
 
 const conversation = await client.chat.start({
@@ -132,8 +136,9 @@ logger.info('Message sent', { sessionId: conversation.sessionId });
 
 ### Vector Search (Semantic)
 ```typescript
-import { Logger } from '@hashgraphonline/standards-sdk';
+import { RegistryBrokerClient, Logger } from '@hashgraphonline/standards-sdk';
 
+const client = new RegistryBrokerClient();
 const logger = new Logger({ module: 'VectorSearch', level: 'info' });
 
 const results = await client.vectorSearch({
@@ -151,8 +156,9 @@ results.hits.forEach(hit => {
 
 ### Get Registry Stats
 ```typescript
-import { Logger } from '@hashgraphonline/standards-sdk';
+import { RegistryBrokerClient, Logger } from '@hashgraphonline/standards-sdk';
 
+const client = new RegistryBrokerClient();
 const logger = new Logger({ module: 'RegistryStats', level: 'info' });
 
 const stats = await client.stats();
