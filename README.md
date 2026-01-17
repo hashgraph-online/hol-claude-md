@@ -1,5 +1,9 @@
 # HOL CLAUDE.md Templates
 
+| ![](https://github.com/hashgraph-online/standards-sdk/raw/main/Hashgraph-Online.png) | A lightweight SDK providing reference implementations for Hashgraph Consensus Standards (HCS) created by Hashgraph Online.<br><br>This SDK is built and maintained by [Hashgraph Online](https://hashgraphonline.com), a consortium of leading Hedera Organizations within the Hedera ecosystem.<br><br>[📚 Standards SDK Documentation](https://hashgraphonline.com/docs/libraries/standards-sdk/)<br>[📖 HCS Standards Documentation](https://hashgraphonline.com/docs/standards) |
+| :-------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+
+
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 > CLAUDE.md templates for [Hashgraph Online (HOL)](https://hol.org) development - helping Claude Code understand your Hedera AI agent projects.
